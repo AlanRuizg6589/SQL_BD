@@ -1,0 +1,58 @@
+Respecto a tipos de datos importantes en SQL:
+
+Primary key puede estar solo como puede ser compuesto | depende del caso.
+
+Si es una tabla pivote (N:M) se usa el primary Key plural, significa que ambas ID usadas no se pueden repetir.
+
+Y dentro de entidades normales, sirve para indicar cual es el ID de identificación.
+
+NOT NULL
+
+si se usa esto con un VARCHAR2, significa que un String no puede estar vacio.
+
+UNIQUE
+
+Indica que un dentro de una entidad con un atributo en especifico, si se crean varios objetos a partir de esta entidad, y a su vez dentro de las métricas algún valor se repite, UNIQUE impide que esto pueda ocurrir.
+
+Ejemplo:
+
+Dos personas distintas (entidad) dentro del atributo Correo (email) no pueden tener el mismo correo, lo impide y pide uno nuevo para cualquiera de los dos.
+
+PRIMERA CONDICIÓN LOGICA
+
+CHECK
+
+Funciona como una condición (Es distinto a un if), si esta condición no se cumple, Oracle SQL aborta el sistema. (Manda un error).
+
+DEFAULT
+
+En caso de que algún parámetro al crear un objeto no se rellene o agregue el dato, se le asigna un valor por defecto.
+
+INSERT TO
+
+Es el indicador para dentro de una tabla ya creada, poder crear objetos a partir de esto y que se agregue en la tabla.
+
+Sigue la siguiente SINTAXIS, INSERT TO "Nombre de la tabla"(Parámetros de la tabla) VALUES ("Valores que tu quieres agregar dentro de los parámetros de la tabla")
+
+Siempre se agrega VALUES.
+
+
+DELETE FROM
+
+Permite eliminar alguna sección de la tabla o toda la tabla.
+
+Depende de lo que uno quiera.
+
+DELETE FROM "Nombre de la tabla" --> Elimina todos los valores de la tabla (no la tabla)
+
+DELETE FROM "Nombre de la tabla" WHERE ("Comparación donde indicas la ID exacta que quieres eliminar") --> Elimina la ID que tu quieres.
+
+
+COMMIT
+
+Confirma todos los pasos que tu hiciste en el proyecto.
+
+ROLLBACK
+
+CTRL + Z, devuelve todo lo que ocurrió desde el ultimo commit. Recomendado hacer commits seguidos por esta razón.
+
