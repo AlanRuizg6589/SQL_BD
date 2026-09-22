@@ -24,7 +24,7 @@
 
 *Descargar esta versión exacta.*
 
-
+*Crear un contenedor con el cual se forma la conexión que se necesita*
 
 *(El momento de agregar una contraseña, guardarla muy bien. (Tampoco se a que parte pertenece))*
 
@@ -56,3 +56,19 @@
 
 **Reiniciar Laptop**
 
+
+EN EL MOMENTO DE CREAR CONEXIONES DENTRO DE ORACLE SQL EN VSC:
+
+A su vez esto funciona como una conexión en la nube, consume recursos de tu propia PC y tienes que puedes desactivarlo como activarlo.
+
+La creación de la conexión admin se hace de forma distinta:
+
+El nombre de la conexión sigue igual (Es modificable y no requiere uno en especifico).
+
+El Type cambia de SID a ... Service Name
+
+El username es SYSTEM
+
+El service name es FREEPDB1
+
+EL rol es default
